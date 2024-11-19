@@ -1,6 +1,0 @@
-public class Client  implements Comparable<Client>{
-
-    
-
-
-}
