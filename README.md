@@ -46,4 +46,17 @@ Provides utility methods for updating the status of purchases based on predefine
 ### 6. `QueriesMain`
 Contains multiple queries to analyze purchase data, such as counting customers, grouping purchases, and calculating statistics.
 
+# Queries in `QueriesMain`
+
+## lv1, query 1: Count customers who made a purchase
+```java
+long count = DataFactory.produce().stream()
+    .map(Purchase::getBuyer)
+    .distinct()
+    .count();
+System.out.println("Result: " + count);
+```
+### Result:
+
+
 ---
